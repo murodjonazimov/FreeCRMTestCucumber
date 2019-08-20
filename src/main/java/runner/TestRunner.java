@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		
 		//tags = "@login",
-		features = "/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/deals.feature", // the path of feature file
+		features = "/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/dealsMap.feature", // the path of feature file
 		glue = { "stepDefenitions" },// path of the step definition file
 		format = {"pretty", "html:test-output","json:Json_Output/cucumber.json","junit:JUnit_xml/cucumber.xml"}, // to generate different types of reports
 		monochrome = true, // display the console output proper readable format

@@ -3,170 +3,54 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "Free CRM Create a new deal scenario",
+        "line": 71,
+        "name": "browser closed",
         "description": "",
-        "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+        "id": "free-crm-application-testing;browser-closed",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3538635848,
+              "duration": 78001395,
               "status": "passed"
             },
-            "line": 4,
-            "name": "User is already on login page",
+            "line": 72,
+            "name": "This is a close broswer test",
             "match": {
-              "location": "DealStepWithMapStepDefenition.user_already_on_login_page()"
+              "location": "TeggingStepsDefinition.this_is_a_close_broswer_test()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "line": 74,
+        "name": "Browser closed",
+        "description": "",
+        "id": "free-crm-application-testing;browser-closed",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 6766546,
+              "duration": 69578,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Title of login page is CRMPRO - CRM software for customer relationship management, sales, and support.",
+            "line": 75,
+            "name": "This is a closed browser test",
             "match": {
-              "location": "DealStepWithMapStepDefenition.title_of_login_page_is_CRMPRO_CRM()"
+              "location": "TeggingStepsDefinition.this_is_a_closed_browser_test()"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 179379759,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User enters username and password",
-            "match": {
-              "location": "DealStepWithMapStepDefenition.User_enters_username_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "azimovmuradjan",
-                  "mura9780879"
-                ],
-                "line": 8
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1715585308,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks on login botton",
-            "match": {
-              "location": "DealStepWithMapStepDefenition.user_clicks_on_login_botton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 33211167,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User on home page",
-            "match": {
-              "location": "DealStepWithMapStepDefenition.user_on_home_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 861125783,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User move to new deal page",
-            "match": {
-              "location": "DealStepWithMapStepDefenition.user_move_too_new_contact_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5090718016,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User enters deal details",
-            "match": {
-              "location": "DealStepWithMapStepDefenition.User_enters_contacts_details(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "title",
-                  "amount",
-                  "probability",
-                  "commission"
-                ],
-                "line": 13
-              },
-              {
-                "cells": [
-                  "test deal1",
-                  "1000",
-                  "50",
-                  "10"
-                ],
-                "line": 14
-              },
-              {
-                "cells": [
-                  "test deal2",
-                  "2000",
-                  "60",
-                  "20"
-                ],
-                "line": 15
-              },
-              {
-                "cells": [
-                  "test deal3",
-                  "3000",
-                  "70",
-                  "30"
-                ],
-                "line": 16
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 94028378,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Quit the chrome",
-            "match": {
-              "location": "DealStepWithMapStepDefenition.quit_the_chrome()"
-            },
-            "keyword": "And "
+            "keyword": "Given "
           }
         ]
       }
     ],
-    "name": "Deal data creation",
+    "name": "Free CRM application testing",
     "description": "",
-    "id": "deal-data-creation",
+    "id": "free-crm-application-testing",
     "keyword": "Feature",
-    "uri": "/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/dealsMap.feature"
+    "uri": "/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/tagging.feature"
   }
 ]

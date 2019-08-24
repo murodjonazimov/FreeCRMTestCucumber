@@ -1,255 +1,165 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/taggetHooks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/dealsMap.feature");
 formatter.feature({
   "line": 1,
-  "name": "Test Tagged Hooks",
+  "name": "Deal data creation",
   "description": "",
-  "id": "test-tagged-hooks",
+  "id": "deal-data-creation",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 219050,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 105196,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 61548,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 137391,
-  "status": "passed"
-});
 formatter.scenario({
-  "line": 4,
-  "name": "This is First test",
+  "line": 3,
+  "name": "Free CRM Create a new deal scenario",
   "description": "",
-  "id": "test-tagged-hooks;this-is-first-test",
+  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@First"
-    }
-  ]
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "User is already on login page",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "this is the first step",
-  "keyword": "Given "
+  "name": "Title of login page is CRMPRO - CRM software for customer relationship management, sales, and support.",
+  "keyword": "When "
 });
 formatter.step({
   "line": 6,
-  "name": "this is the second step",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "this is the third step",
+  "name": "User enters username and password",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
+        "azimovmuradjan",
+        "mura9780879"
+      ],
+      "line": 8
+    }
+  ],
   "keyword": "Then "
 });
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
+formatter.step({
+  "line": 9,
+  "name": "User clicks on login botton",
+  "keyword": "Then "
 });
-formatter.result({
-  "duration": 86367004,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
-});
-formatter.result({
-  "duration": 87500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
-});
-formatter.result({
-  "duration": 64372,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 50935,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 45995,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 44620,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 45110,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 105509,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 52914,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 48042,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 109277,
-  "status": "passed"
-});
-formatter.scenario({
+formatter.step({
   "line": 10,
-  "name": "This is Second test",
-  "description": "",
-  "id": "test-tagged-hooks;this-is-second-test",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 9,
-      "name": "@Second"
-    }
-  ]
+  "name": "User on home page",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "this is the first step",
-  "keyword": "Given "
+  "name": "User move to new deal page",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "this is the second step",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "this is the third step",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
-});
-formatter.result({
-  "duration": 51508,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
-});
-formatter.result({
-  "duration": 44112,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
-});
-formatter.result({
-  "duration": 102422,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 76431,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 61868,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 44346,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 36662,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 104124,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 52047,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 43682,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 103913,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 16,
-  "name": "This is Third test",
-  "description": "",
-  "id": "test-tagged-hooks;this-is-third-test",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
+  "name": "User enters deal details",
+  "rows": [
     {
-      "line": 15,
-      "name": "@Third"
+      "cells": [
+        "title",
+        "amount",
+        "probability",
+        "commission"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "test deal1",
+        "1000",
+        "50",
+        "10"
+      ],
+      "line": 14
+    },
+    {
+      "cells": [
+        "test deal2",
+        "2000",
+        "60",
+        "20"
+      ],
+      "line": 15
+    },
+    {
+      "cells": [
+        "test deal3",
+        "3000",
+        "70",
+        "30"
+      ],
+      "line": 16
     }
-  ]
+  ],
+  "keyword": "Then "
 });
 formatter.step({
   "line": 17,
-  "name": "this is the first step",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 18,
-  "name": "this is the second step",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 19,
-  "name": "this is the third step",
-  "keyword": "Then "
+  "name": "Quit the chrome",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
+  "location": "DealStepDefenition.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 51540,
+  "duration": 3768530233,
   "status": "passed"
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
+  "location": "DealStepDefenition.title_of_login_page_is_CRMPRO_CRM()"
 });
 formatter.result({
-  "duration": 42986,
+  "duration": 7459710,
   "status": "passed"
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
+  "location": "DealStepDefenition.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 52941,
+  "duration": 199245697,
   "status": "passed"
 });
-formatter.after({
-  "duration": 48383,
+formatter.match({
+  "location": "DealStepDefenition.user_clicks_on_login_botton()"
+});
+formatter.result({
+  "duration": 584836930,
   "status": "passed"
 });
-formatter.after({
-  "duration": 69131,
-  "status": "passed"
+formatter.match({
+  "location": "DealStepDefenition.user_on_home_page()"
 });
-formatter.after({
-  "duration": 56283,
-  "status": "passed"
+formatter.result({
+  "duration": 37869268,
+  "error_message": "org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Murodjons-MBP.fios-router.home\u0027, ip: \u0027fe80:0:0:0:491:cbc3:fd83:d008%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u00271.8.0_191\u0027\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)\n\tat stepDefenitions.DealStepDefenition.switchToFrame(DealStepDefenition.java:21)\n\tat stepDefenitions.DealStepDefenition.user_on_home_page(DealStepDefenition.java:53)\n\tat ✽.Then User on home page(/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/dealsMap.feature:10)\n",
+  "status": "failed"
 });
-formatter.after({
-  "duration": 32723,
-  "status": "passed"
+formatter.match({
+  "location": "DealStepDefenition.user_move_too_new_contact_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "DealStepDefenition.user_enters_and_and(DataTable)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "DealStepDefenition.quit_the_chrome()"
+});
+formatter.result({
+  "status": "skipped"
 });
 });

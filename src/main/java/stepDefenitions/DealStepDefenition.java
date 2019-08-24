@@ -47,7 +47,7 @@
 //	@Then("^User on home page$")
 //	public void user_on_home_page() {
 //		String homePageTitle = driver.getTitle();
-//		System.out.println("Home Page title is :" + homePageTitle);
+//		System.out.println("Home Page title is:" + homePageTitle);
 //		Assert.assertEquals("CRMPRO", homePageTitle);
 //	}
 //	@Then("^User move to new deal page$")
@@ -61,7 +61,7 @@
 //	public void user_enters_and_and(DataTable dealData) {
 //		List<List<String>> dealValue = dealData.raw();
 //		driver.findElement(By.id("title")).sendKeys(dealValue.get(0).get(0));
-//		driver.findElement(By.id("amount")).sendKeys(dealValue.get(0).get(1));
+//		driver.findElement(By.id("amount")).sendKeys(dealValue.get(1).get(1));
 //		driver.findElement(By.id("probability")).sendKeys(dealValue.get(0).get(2));
 //	    driver.findElement(By.id("commission")).sendKeys(dealValue.get(0).get(3));
 //		//driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();

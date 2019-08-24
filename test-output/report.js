@@ -1,165 +1,216 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/dealsMap.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/login.feature");
 formatter.feature({
   "line": 1,
-  "name": "Deal data creation",
+  "name": "Free CRM login Feature",
   "description": "",
-  "id": "deal-data-creation",
+  "id": "free-crm-login-feature",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "line": 3,
-  "name": "Free CRM Create a new deal scenario",
+formatter.scenarioOutline({
+  "comments": [
+    {
+      "line": 3,
+      "value": "#Without examples keyword"
+    },
+    {
+      "line": 4,
+      "value": "#Scenario: Free CRM Login Test Scenario"
+    },
+    {
+      "line": 5,
+      "value": "#\tGiven User is already on login page"
+    },
+    {
+      "line": 6,
+      "value": "#\tWhen Title of login page is CRMPRO - CRM software for customer relationship management, sales, and support."
+    },
+    {
+      "line": 7,
+      "value": "#\tThen User enters \"azimovmuradjan\" and \"mura9780879\""
+    },
+    {
+      "line": 8,
+      "value": "#\tThen User clicks on login botton"
+    },
+    {
+      "line": 9,
+      "value": "#\tThen User on home page"
+    },
+    {
+      "line": 10,
+      "value": "#\tAnd Quit the chrome"
+    },
+    {
+      "line": 12,
+      "value": "# With Examples keywords"
+    }
+  ],
+  "line": 14,
+  "name": "Free CRM Login Test Scenario",
   "description": "",
-  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "id": "free-crm-login-feature;free-crm-login-test-scenario",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 13,
+      "name": "@SmokeTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 4,
+  "line": 15,
   "name": "User is already on login page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
+  "line": 16,
   "name": "Title of login page is CRMPRO - CRM software for customer relationship management, sales, and support.",
   "keyword": "When "
 });
 formatter.step({
-  "line": 6,
-  "name": "User enters username and password",
+  "line": 17,
+  "name": "User enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 18,
+  "name": "User clicks on login botton",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "User on home page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "Quit the chrome",
+  "keyword": "And "
+});
+formatter.examples({
+  "line": 21,
+  "name": "",
+  "description": "",
+  "id": "free-crm-login-feature;free-crm-login-test-scenario;",
   "rows": [
     {
       "cells": [
         "username",
         "password"
       ],
-      "line": 7
+      "line": 22,
+      "id": "free-crm-login-feature;free-crm-login-test-scenario;;1"
     },
     {
       "cells": [
         "azimovmuradjan",
         "mura9780879"
       ],
-      "line": 8
+      "line": 23,
+      "id": "free-crm-login-feature;free-crm-login-test-scenario;;2"
     }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 23,
+  "name": "Free CRM Login Test Scenario",
+  "description": "",
+  "id": "free-crm-login-feature;free-crm-login-test-scenario;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 13,
+      "name": "@SmokeTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 15,
+  "name": "User is already on login page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 16,
+  "name": "Title of login page is CRMPRO - CRM software for customer relationship management, sales, and support.",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 17,
+  "name": "User enters \"azimovmuradjan\" and \"mura9780879\"",
+  "matchedColumns": [
+    0,
+    1
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 18,
   "name": "User clicks on login botton",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 19,
   "name": "User on home page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
-  "name": "User move to new deal page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "User enters deal details",
-  "rows": [
-    {
-      "cells": [
-        "title",
-        "amount",
-        "probability",
-        "commission"
-      ],
-      "line": 13
-    },
-    {
-      "cells": [
-        "test deal1",
-        "1000",
-        "50",
-        "10"
-      ],
-      "line": 14
-    },
-    {
-      "cells": [
-        "test deal2",
-        "2000",
-        "60",
-        "20"
-      ],
-      "line": 15
-    },
-    {
-      "cells": [
-        "test deal3",
-        "3000",
-        "70",
-        "30"
-      ],
-      "line": 16
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
+  "line": 20,
   "name": "Quit the chrome",
   "keyword": "And "
 });
 formatter.match({
-  "location": "DealStepDefenition.user_already_on_login_page()"
+  "location": "LoginStepDefenition.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 3768530233,
+  "duration": 3753746359,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefenition.title_of_login_page_is_CRMPRO_CRM()"
+  "location": "LoginStepDefenition.title_of_login_page_is_CRMPRO_CRM()"
 });
 formatter.result({
-  "duration": 7459710,
+  "duration": 47785753,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefenition.user_enters_username_and_password(DataTable)"
+  "arguments": [
+    {
+      "val": "azimovmuradjan",
+      "offset": 13
+    },
+    {
+      "val": "mura9780879",
+      "offset": 34
+    }
+  ],
+  "location": "LoginStepDefenition.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 199245697,
+  "duration": 263354099,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefenition.user_clicks_on_login_botton()"
+  "location": "LoginStepDefenition.user_clicks_on_login_botton()"
 });
 formatter.result({
-  "duration": 584836930,
+  "duration": 1891879174,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefenition.user_on_home_page()"
+  "location": "LoginStepDefenition.user_on_home_page()"
 });
 formatter.result({
-  "duration": 37869268,
-  "error_message": "org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Murodjons-MBP.fios-router.home\u0027, ip: \u0027fe80:0:0:0:491:cbc3:fd83:d008%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u00271.8.0_191\u0027\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)\n\tat stepDefenitions.DealStepDefenition.switchToFrame(DealStepDefenition.java:21)\n\tat stepDefenitions.DealStepDefenition.user_on_home_page(DealStepDefenition.java:53)\n\tat ✽.Then User on home page(/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/dealsMap.feature:10)\n",
-  "status": "failed"
+  "duration": 5526341,
+  "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefenition.user_move_too_new_contact_page()"
+  "location": "LoginStepDefenition.quit_the_chrome()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "DealStepDefenition.user_enters_and_and(DataTable)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "DealStepDefenition.quit_the_chrome()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 93889066,
+  "status": "passed"
 });
 });

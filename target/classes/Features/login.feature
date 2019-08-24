@@ -10,6 +10,7 @@ Feature: Free CRM login Feature
 #	And Quit the chrome
 
 # With Examples keywords
+@SmokeTest
 Scenario Outline: Free CRM Login Test Scenario
 	Given User is already on login page
 	When Title of login page is CRMPRO - CRM software for customer relationship management, sales, and support.

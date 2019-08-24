@@ -3,168 +3,112 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "Free CRM Create a new deal scenario",
+        "line": 23,
+        "name": "Free CRM Login Test Scenario",
         "description": "",
-        "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3768530233,
+              "duration": 3753746359,
               "status": "passed"
             },
-            "line": 4,
+            "line": 15,
             "name": "User is already on login page",
             "match": {
-              "location": "DealStepDefenition.user_already_on_login_page()"
+              "location": "LoginStepDefenition.user_already_on_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7459710,
+              "duration": 47785753,
               "status": "passed"
             },
-            "line": 5,
+            "line": 16,
             "name": "Title of login page is CRMPRO - CRM software for customer relationship management, sales, and support.",
             "match": {
-              "location": "DealStepDefenition.title_of_login_page_is_CRMPRO_CRM()"
+              "location": "LoginStepDefenition.title_of_login_page_is_CRMPRO_CRM()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 199245697,
+              "duration": 263354099,
               "status": "passed"
-            },
-            "line": 6,
-            "name": "User enters username and password",
-            "match": {
-              "location": "DealStepDefenition.user_enters_username_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "azimovmuradjan",
-                  "mura9780879"
-                ],
-                "line": 8
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 584836930,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks on login botton",
-            "match": {
-              "location": "DealStepDefenition.user_clicks_on_login_botton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 37869268,
-              "error_message": "org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Murodjons-MBP.fios-router.home\u0027, ip: \u0027fe80:0:0:0:491:cbc3:fd83:d008%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u00271.8.0_191\u0027\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)\n\tat stepDefenitions.DealStepDefenition.switchToFrame(DealStepDefenition.java:21)\n\tat stepDefenitions.DealStepDefenition.user_on_home_page(DealStepDefenition.java:53)\n\tat ✽.Then User on home page(/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/dealsMap.feature:10)\n",
-              "status": "failed"
-            },
-            "line": 10,
-            "name": "User on home page",
-            "match": {
-              "location": "DealStepDefenition.user_on_home_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "User move to new deal page",
-            "match": {
-              "location": "DealStepDefenition.user_move_too_new_contact_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "User enters deal details",
-            "match": {
-              "location": "DealStepDefenition.user_enters_and_and(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "title",
-                  "amount",
-                  "probability",
-                  "commission"
-                ],
-                "line": 13
-              },
-              {
-                "cells": [
-                  "test deal1",
-                  "1000",
-                  "50",
-                  "10"
-                ],
-                "line": 14
-              },
-              {
-                "cells": [
-                  "test deal2",
-                  "2000",
-                  "60",
-                  "20"
-                ],
-                "line": 15
-              },
-              {
-                "cells": [
-                  "test deal3",
-                  "3000",
-                  "70",
-                  "30"
-                ],
-                "line": 16
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
             },
             "line": 17,
+            "name": "User enters \"azimovmuradjan\" and \"mura9780879\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "azimovmuradjan",
+                  "offset": 13
+                },
+                {
+                  "val": "mura9780879",
+                  "offset": 34
+                }
+              ],
+              "location": "LoginStepDefenition.user_enters_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1891879174,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks on login botton",
+            "match": {
+              "location": "LoginStepDefenition.user_clicks_on_login_botton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5526341,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User on home page",
+            "match": {
+              "location": "LoginStepDefenition.user_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 93889066,
+              "status": "passed"
+            },
+            "line": 20,
             "name": "Quit the chrome",
             "match": {
-              "location": "DealStepDefenition.quit_the_chrome()"
+              "location": "LoginStepDefenition.quit_the_chrome()"
             },
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@SmokeTest"
           }
         ]
       }
     ],
-    "name": "Deal data creation",
+    "name": "Free CRM login Feature",
     "description": "",
-    "id": "deal-data-creation",
+    "id": "free-crm-login-feature",
     "keyword": "Feature",
-    "uri": "/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/dealsMap.feature"
+    "uri": "/Users/murodjonazimov/eclipse-workspace/FreeCRMTestCucumber/src/main/java/Features/login.feature"
   }
 ]
